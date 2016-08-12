@@ -1,8 +1,10 @@
-FROM debian:latest
+FROM ngako/debian:latest
 MAINTAINER laurent NGAKO <laurent.ngako@gmail.com>
 #Intall curl
 RUN apt-get update -y
 RUN apt-get install curl -y
+#Install git
+RUN apt-get install git -y
 #Install vim to edit the files.
 RUN apt-get install -y vim
 #Intall nodejs see: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
