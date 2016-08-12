@@ -20,7 +20,7 @@ $ docker build -t <image-name> .
 ```
 $ docker run -it --name <name-container> -e LOCAL_USER_ID=`id -u $USER` -d <image-name> 
 ```
-into your container type
+* Into your container type
 ```
 $ gosu dev bash
 ```
