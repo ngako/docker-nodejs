@@ -14,5 +14,6 @@ RUN apt-get install -y nodejs
 EXPOSE 8001
 #Create dev folder and use it.
 RUN mkdir /home/dev/
+#Go to working directory
 WORKDIR /home/dev/
 
