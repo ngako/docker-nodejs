@@ -3,6 +3,8 @@ MAINTAINER laurent NGAKO <laurent.ngako@gmail.com>
 #Intall curl
 RUN apt-get update -y
 RUN apt-get install curl -y
+#Install wget
+RUN apt-get install wget -y
 #Install git
 RUN apt-get install git -y
 #Install vim to edit the files.
