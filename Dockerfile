@@ -45,3 +45,6 @@ RUN set -x \
 # Copy file to create local user into container
 COPY ./add-local-user.sh /usr/local/bin/add-local-user
 RUN chmod +x /usr/local/bin/add-local-user
+
+# Add default developer user name
+ENV LOCAL_USER_NAME dev
