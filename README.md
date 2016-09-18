@@ -18,9 +18,12 @@ $ docker build -t <image-name> .
 
 ##### How can you launch your container bases on you new image with other use that root?
 ```
-$ docker run -it --name <name-container> -e LOCAL_USER_ID=`id -u $USER` -d <image-name> bash
+$ docker run -it --name <name-container> -e LOCAL_USER_ID=`id -u $USER` -e LOCAL_USER_NAME=$USER -d <image-name>
 ```
 * Into your container type
+```
+$ add-local-user
+```
 ```
 $ gosu dev bash
 ```
