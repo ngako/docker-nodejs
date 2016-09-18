@@ -12,8 +12,8 @@ RUN apt-get install -y vim
 #Intall nodejs see: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
-#expose port 8101 for test
-EXPOSE 8001
+#expose port 3000 for test
+EXPOSE 3000
 #Create dev folder and use it.
 RUN mkdir /home/dev/
 #Go to working directory
