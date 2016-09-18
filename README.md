@@ -23,8 +23,6 @@ $ docker run -it --name <name-container> -e LOCAL_USER_ID=`id -u $USER` -e LOCAL
 * Into your container type
 ```
 $ add-local-user
-```
-```
 $ gosu dev bash
 ```
 
