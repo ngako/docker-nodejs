@@ -5,17 +5,14 @@ MAINTAINER laurent NGAKO <laurent.ngako@gmail.com>
 RUN apt-get update -y
 # Install ca-certificates to support ssl connections.
 RUN apt-get install ca-certificates -y
+#Install curl
 RUN apt-get install curl -y
-
 #Install wget
 RUN apt-get install wget -y
-
 #Install git
 RUN apt-get install git -y
-
 #Install vim to edit the files.
 RUN apt-get install -y vim
-
 #Intall nodejs see: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
