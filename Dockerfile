@@ -3,6 +3,8 @@ MAINTAINER laurent NGAKO <laurent.ngako@gmail.com>
 
 #Intall curl
 RUN apt-get update -y
+# Install ca-certificates to support ssl connections.
+RUN apt-get install ca-certificates -y
 RUN apt-get install curl -y
 
 #Install wget
